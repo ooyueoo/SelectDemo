@@ -17,6 +17,24 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    signingConfigs {
+        release {
+            keyAlias 'ooyueoo'
+            keyPassword '11111111'
+            storeFile file('/Users/liqiang/AndroidStudioProjects/key/ooyueoo.jks')
+            storePassword '11111111'
+        }
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+
+
 }
 
 dependencies {
