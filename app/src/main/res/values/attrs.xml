@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SCConstraintLayout">
+        <attr name="mustChoose" format="boolean" ></attr>
+        <attr name="targetView" format="boolean"></attr>
+        <attr name="strMiniLength" format="integer"></attr>
+    </declare-styleable>
+
+
+
+</resources>
