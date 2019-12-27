@@ -25,6 +25,12 @@ android {
             storeFile file('/Users/liqiang/AndroidStudioProjects/key/ooyueoo.jks')
             storePassword '11111111'
         }
+        debug {
+            keyAlias 'ooyueoo'
+            keyPassword '11111111'
+            storeFile file('/Users/liqiang/AndroidStudioProjects/key/ooyueoo.jks')
+            storePassword '11111111'
+        }
 
     }
 
