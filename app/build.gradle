@@ -26,17 +26,30 @@ android {
             storePassword '11111111'
         }
         debug {
-            keyAlias 'ooyueoo'
-            keyPassword '11111111'
             storeFile file('/Users/liqiang/AndroidStudioProjects/key/ooyueoo.jks')
             storePassword '11111111'
+            keyAlias = 'ooyueoo'
+            keyPassword '11111111'
         }
+
 
     }
 
     lintOptions {
         checkReleaseBuilds false
         abortOnError false
+    }
+    flavorDimensions "color", "price" ,"type"
+    productFlavors{
+        red{
+            flavorDimensions("color")
+        }
+        price{
+            flavorDimensions("price")
+        }
+        type{
+            flavorDimensions("type")
+        }
     }
 
 
